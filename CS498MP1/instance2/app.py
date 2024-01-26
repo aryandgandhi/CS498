@@ -13,7 +13,7 @@ def get_seed():
 @app.route('/', methods=['POST'])
 def update_seed():
     global seed_value
-    seed = request.json["num"]
+    seed_value = request.json["num"]
     return "OK", 200
 
 

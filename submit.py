@@ -7,11 +7,11 @@ YOUR_EMAIL = "aryang6@illinois.edu" # <put your coursera account email>,
 YOUR_SECRET = "d9mwNWgzBHqaZq1p" # <put your secret token from coursera>
 
 # Section 1
-IP_ADDRESS1 = "3.137.206.17" # <put your first EC2 instance's IP address:port>
-IP_ADDRESS2 = "13.59.244.37" # <put your second instance's IP address:port>
-YOUR_LOAD_BALANCER1 = "MP1LB-1093444444.us-east-2.elb.amazonaws.com" # <put your load_balancer address for section 1>
+IP_ADDRESS1 = "3.137.206.17:5000" # <put your first EC2 instance's IP address:port>
+IP_ADDRESS2 = "13.59.244.37:5000" # <put your second instance's IP address:port>
+YOUR_LOAD_BALANCER1 = "MP1LB-1093444444.us-east-2.elb.amazonaws.com:5000" # <put your load_balancer address for section 1>
 # Section 2
-YOUR_LOAD_BALANCER2 = "internal-my-first-asg-1-1984742288.us-east-2.elb.amazonaws.com" # <put your load_balancer address for section 2>, 
+YOUR_LOAD_BALANCER2 = "internal-my-first-asg-1-1984742288.us-east-2.elb.amazonaws.com:5000" # <put your load_balancer address for section 2>, 
 
 ''' Don't change the following '''
 url = "https://ekwygde36j.execute-api.us-east-1.amazonaws.com/alpha/execution"
