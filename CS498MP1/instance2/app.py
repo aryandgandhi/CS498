@@ -16,9 +16,9 @@ def update_seed():
 
     request_data = request.get_json()
     seed_value = request_data.get('num', seed_value)
-    
+
     return jsonify(message="Seed value updated", new_seed=seed_value), 200
 
 if __name__ == '__main__':
 
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=5000)
