@@ -9,11 +9,15 @@ seed_value = 0
 @app.route('/', methods=['GET'])
 def get_seed():
     import socket
+    #just gets ip address
     return socket.gethostname()
 
 @app.route('/', methods=['POST'])
-def update_seed():
-    
+def post_num():
+    import subprocess
+
+    subprocess.Popen(["python3", "stress_cpu.py"]) #might need to use python
+
    
 
 
