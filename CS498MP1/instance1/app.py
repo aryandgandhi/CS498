@@ -8,7 +8,7 @@ seed_value = 0
 @app.route('/', methods=['GET'])
 def get_seed():
 
-    return jsonify(seed=seed_value)
+    return str(seed_value)
 
 @app.route('/', methods=['POST'])
 def update_seed():
