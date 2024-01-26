@@ -17,6 +17,7 @@ def post_num():
     import subprocess
 
     subprocess.Popen(["python3", "stress_cpu.py"]) #might need to use python
+    return "", 200
 
    
 
