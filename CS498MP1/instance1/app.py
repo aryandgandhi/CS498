@@ -13,10 +13,8 @@ def get_seed():
 @app.route('/', methods=['POST'])
 def update_seed():
     global seed_value
-
-    request_data = request.get_json()
-    seed_value = request_data.get('num', seed_value)
-    return jsonify(message="Seed value updated", new_seed=seed_value), 200
+    seed = request.json["num"]
+    return "OK", 200
 
 if __name__ == '__main__':
 
